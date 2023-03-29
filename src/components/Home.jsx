@@ -149,18 +149,14 @@ const Home = () => {
               alt=""
             />
           </div>{" "}
-          <div
-            data-aos="fade-right"
-            data-aos-delay="300"
-            className="absolute bottom-5 left-0 flex lg:flex-col gap-3 items-center"
-          >
+          <div className="absolute bottom-5 left-0 flex lg:flex-col gap-3 items-center">
             <a
               href="https://www.facebook.com/people/John-Reygun-Danag/100004818424870/"
               className=""
             >
               <FaFacebook className="text-white text-xl" />
             </a>
-            <a href="https://github.com/CoderegTech" className="">
+            <a href="https://github.com/coderegtech" className="">
               <FaGithub className="text-white text-xl" />
             </a>
             <a
