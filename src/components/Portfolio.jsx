@@ -3,6 +3,7 @@ import animenia from "../assets/images/animenia.png";
 import bakery from "../assets/images/bakery.png";
 import chatterzph from "../assets/images/chatterzph.png";
 import gallery from "../assets/images/gallery.png";
+import gmailclone from "../assets/images/gmail-clone.png";
 import loginform from "../assets/images/loginform.jpg";
 import netherlands from "../assets/images/netherlands.png";
 import pesbook from "../assets/images/pesbook.png";
@@ -22,6 +23,7 @@ const Portfolio = () => {
     tiktokclone,
     animenia,
     pesbook,
+    gmailclone,
     spense,
     netherlands,
     loginform,
