@@ -22,7 +22,7 @@ const Home = () => {
       className="w-full h-full bg-primary overflow-x-hidden "
     >
       <div className=" w-full px-5 ">
-        <div className="bg-primary w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 border-b border-white/10">
+        <div className="bg-primary w-full fixed top-0 left-1/2 -translate-x-1/2 z-50 border-b border-white/5 md:px-5">
           <header className=" md:max-w-6xl w-full mx-auto flex justify-between items-center py-5 px-5 lg:px-0 ">
             <h1 className="text-white text-xl font-semibold font-mono cursor-pointer">
               <Link
@@ -253,12 +253,12 @@ const Home = () => {
         {/* Skills section */}
         <div
           id="skills"
-          className="md:h-[70vh] w-full md:max-w-6xl  md:mx-auto my-14  md:px-5 flex flex-col justify-start items-center "
+          className="h-full w-full md:max-w-6xl  md:mx-auto my-14  md:px-5 flex flex-col justify-start items-center "
         >
           <h1 className="text-center text-white text-3xl font-mono font-semibold py-5">
             Skills
           </h1>
-          <div className="md:max-w-lg h-full w-full  p-5 bg-black rounded-xl  ">
+          <div className="max-w-xl h-full w-full  p-5 bg-black rounded-xl  ">
             <Skills />
           </div>
         </div>
