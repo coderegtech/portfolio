@@ -62,13 +62,11 @@
   /* transform: translateX(-50%); */
   transition: all 300ms linear;
 }
-/* .navItem .active::before,
-.navItem:hover::before,
-.navItem:focus::before,
+.navItem .active::before,
 .navItem:hover {
   width: 100%;
   color: rgb(220 38 38 / 1);
-} */
+}
 
 .navItem .active {
   width: 100%;
