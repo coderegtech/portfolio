@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
 import { Link } from "react-scroll";
