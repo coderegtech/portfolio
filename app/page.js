@@ -1,5 +1,6 @@
 "use client";
 
+import { useDarkMode } from "@/utils";
 import {
   Facebook,
   Github,
@@ -87,7 +88,7 @@ const HomeScreen = () => {
       duration: "2024 - present",
     },
     {
-      institution: "AMA Computer Learning Centre",
+      institution: "AMA Computer Learning Center",
       degree: "TVL - ICT",
       duration: "2019 - 2021",
     },
@@ -159,7 +160,7 @@ const HomeScreen = () => {
     {
       name: "Adventour App",
       description:
-        "A travel booking app using nextjs , firebase for auth and Fruitask for REST API database",
+        "A travel booking app using nextjs, firebase and Fruitask for REST API database",
       url: "https://github.com/coderegtech/adventour-app",
     },
     {
@@ -169,19 +170,9 @@ const HomeScreen = () => {
     },
   ];
 
-  const [isDark, setIsDark] = useState(() => {
-    const res = localStorage.getItem("isdark");
-    return res === "true";
-  });
+  const { isDark, toggleTheme, mounted } = useDarkMode();
 
-  useEffect(() => {
-    localStorage.setItem("isdark", isDark);
-  }, [isDark]);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-  };
-
+  if (!mounted) return null;
   return (
     <div
       className={`w-full min-h-screen ${

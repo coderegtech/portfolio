@@ -25,11 +25,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #737373;
+*::-webkit-scrollbar-thumb {
+  background: #333;
+  height: 10px;
   border-radius: 100px;
 }
