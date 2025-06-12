@@ -25,8 +25,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
   background: #333;
-  height: 10px;
+  height: 100px;
   border-radius: 100px;
 }

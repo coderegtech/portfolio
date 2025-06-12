@@ -175,7 +175,7 @@ const HomeScreen = () => {
   if (!mounted) return null;
   return (
     <div
-      className={`w-full min-h-screen ${
+      className={`w-full min-h-screen over ${
         isDark
           ? "bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900"
           : "bg-gradient-to-br from-yellow-100 via-orange-50 to-yellow-100"
@@ -399,16 +399,24 @@ const HomeScreen = () => {
                 isDark
                   ? "border-r-neutral-300 border-b-neutral-300 border-gray-600 bg-gray-800"
                   : "border-r-black border-b-black border-neutral-500 bg-white"
-              } shadow-xl rounded-xl p-4 transition-all duration-300`}
+              } shadow-xl rounded-xl  transition-all duration-300 overflow-hidden`}
             >
-              <h1
-                className={`text-xl font-bold ${
-                  isDark ? "text-white" : "text-gray-800"
-                } mb-3`}
+              <div
+                className={`${
+                  isDark ? "bg-gray-700" : "bg-gray-100"
+                } p-3 border-b ${
+                  isDark ? "border-gray-600" : "border-gray-200"
+                }`}
               >
-                Contact Information
-              </h1>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <h1
+                  className={`text-xl font-bold ${
+                    isDark ? "text-white" : "text-gray-800"
+                  }`}
+                >
+                  Contact Information
+                </h1>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
                 <div className="flex items-center gap-3">
                   <div
                     className={`p-2 border ${
@@ -516,16 +524,24 @@ const HomeScreen = () => {
                 isDark
                   ? "border-r-neutral-300 border-b-neutral-300 border-gray-600 bg-gray-800"
                   : "border-r-black border-b-black border-neutral-500 bg-white"
-              } shadow-xl rounded-xl p-4 transition-all duration-300`}
+              } shadow-xl rounded-xl transition-all duration-300 overflow-hidden`}
             >
-              <h1
-                className={`text-xl font-bold ${
-                  isDark ? "text-white" : "text-gray-800"
-                } mb-4`}
+              <div
+                className={`${
+                  isDark ? "bg-gray-700" : "bg-gray-100"
+                } p-3 border-b ${
+                  isDark ? "border-gray-600" : "border-gray-200"
+                }`}
               >
-                GitHub Projects
-              </h1>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <h1
+                  className={`text-xl font-bold ${
+                    isDark ? "text-white" : "text-gray-800"
+                  }`}
+                >
+                  Github Projects
+                </h1>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
                 {projects.map((project, index) => (
                   <a
                     key={index}
@@ -780,7 +796,7 @@ const HomeScreen = () => {
 const WindowScreen = ({ children, isDark, onToggleTheme }) => {
   return (
     <div
-      className={`hidden md:block w-full max-w-7xl min-h-[500px] border-2 ${
+      className={`hidden md:block w-full max-w-7xl min-h-[500px] border-2 overflow-hidden ${
         isDark ? "border-gray-600 bg-gray-800" : "border-neutral-500 bg-white"
       } rounded-xl relative shadow-2xl transition-all duration-300`}
     >
