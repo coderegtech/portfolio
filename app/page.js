@@ -518,6 +518,20 @@ const HomeScreen = () => {
               </div>
             </div>
 
+            <div
+              className={`border-2 border-r-8 border-b-8 ${
+                isDark
+                  ? "border-r-neutral-300 border-b-neutral-300 border-gray-600 bg-gray-800"
+                  : "border-r-black border-b-black border-neutral-500 bg-white"
+              } shadow-xl rounded-xl transition-all duration-300 overflow-hidden p-6`}
+            >
+              <img
+                className="w-full h-full object-cover"
+                src={"https://ghchart.rshah.org/coderegtech"}
+                alt="GitHub Contributions Chart"
+              />
+            </div>
+
             {/* Projects */}
             <div
               className={`border-2 border-r-8 border-b-8 ${
